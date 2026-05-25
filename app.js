@@ -1,4 +1,7 @@
 /*
+EXAMPLE 1
+*/
+/*
 * Converting Temperatures
 *
 * Celsius to Fahrenheit
@@ -7,3 +10,93 @@
  */
 
 let celsius = 10;
+let fahrenheit = celsius * 1.8 + 32; 
+
+console.log(fahrenheit)
+
+let bool = '1' === 1; //true
+console.log (bool)
+
+/*
+EXAMPLE 2
+*/
+
+let subcribed = false;
+let loggedIn = true;
+
+if (subcribed === true) {
+  console.log('show the video');
+}
+
+else if (loggedIn === true) {
+  console.log('tell the user to upgrade their subscription');
+}
+else {
+  console.log('tell the user to log into account');
+} 
+
+/*
+EXAMPLE 3
+*/
+let cash = 100;
+let price = 200;
+let difference = cash - price;
+
+if (cash > price) {
+  console.log(`you paid extra - here's ${difference} dollars change`);
+}
+else if (cash === price) {
+  console.log('you paid the exact amount, have a nice day!');
+}
+else {
+  console.log(`not enough money - you still owe ${difference * -1} dollars`);
+}
+/*
+EXAMPLE 4
+*/
+
+ let money = 50;
+ let total = 40;
+ let isStoreOpen = false;
+
+ if (money >= total && isStoreOpen === true) {
+  console.log('print the reciept')
+ }
+/*
+ EXAMPLE 5
+ if (cash >= price || isStoreOpen) {
+  console.log('print the reciept')
+ }
+  */
+
+ /*
+ EXAMPLE 6
+ if (cash >= price  !isStoreOpe) {
+  console.log('print the reciept')
+ }
+*/
+
+let val = "";
+
+if ("") {
+  console.log("truthy value", !!val);
+}
+
+else {
+  console.log( !!val);
+}
+
+let hot = false;
+
+hot ? console.log('weather is hot outside') : console.log('weather is cold');
+
+/*
+EXAMPLE 7 
+*/
+let subscribe = false;
+let loggedInn = true;
+
+let str = subscribe || loggedInn ? 'show the videos' : 'hide the videos';
+console.log(str);
+
+
