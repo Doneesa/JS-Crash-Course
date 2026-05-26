@@ -8,7 +8,6 @@ EXAMPLE 1
 *
 *   F =  C X 1.8 + 32
  */
-
 let celsius = 10;
 let fahrenheit = celsius * 1.8 + 32; 
 
@@ -16,11 +15,9 @@ console.log(fahrenheit)
 
 let bool = '1' === 1; //true
 console.log (bool)
-
 /*
 EXAMPLE 2
 */
-
 let subcribed = false;
 let loggedIn = true;
 
@@ -34,7 +31,6 @@ else if (loggedIn === true) {
 else {
   console.log('tell the user to log into account');
 } 
-
 /*
 EXAMPLE 3
 */
@@ -54,7 +50,6 @@ else {
 /*
 EXAMPLE 4
 */
-
  let money = 50;
  let total = 40;
  let isStoreOpen = false;
@@ -68,14 +63,12 @@ EXAMPLE 4
   console.log('print the reciept')
  }
   */
-
  /*
  EXAMPLE 6
- if (cash >= price  !isStoreOpe) {
+ if (cash >= price  !isStoreOpen) {
   console.log('print the reciept')
  }
 */
-
 let val = "";
 
 if ("") {
@@ -89,7 +82,6 @@ else {
 let hot = false;
 
 hot ? console.log('weather is hot outside') : console.log('weather is cold');
-
 /*
 EXAMPLE 7 
 */
@@ -98,5 +90,27 @@ let loggedInn = true;
 
 let str = subscribe || loggedInn ? 'show the videos' : 'hide the videos';
 console.log(str);
+
+let funds = 50;
+let expense = 40;
+let isStoresOpen = true;
+
+let string = funds >= expense && isStoresOpen ? "print the receipt" : "do not give receipt";
+console.log(string);
+
+/*
+
+3 LOOPS
+
+*/
+/*let count = 1;
+  console.log(count);*/
+
+//DRY = Don't  repeat yourself 
+let count = 1;
+ 
+while () {
+  console.log('this ran');
+}
 
 
