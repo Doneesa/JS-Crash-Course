@@ -107,10 +107,19 @@ console.log(string);
   console.log(count);*/
 
 //DRY = Don't  repeat yourself 
+/*
 let count = 1;
  
-while () {
-  console.log('this ran');
+while (count <= 100) {
+  
+  count = count + 1;
+  console.log('this ran')
 }
+*/
+/* i stands for index */
+for (let i = 0; i < 5; i = i + 1) {
+  console.log (i);
+}
+/* i++ or ++i */
 
 
