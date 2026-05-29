@@ -117,9 +117,20 @@ while (count <= 100) {
 }
 */
 /* i stands for index */
-for (let i = 0; i < 5; i = i + 1) {
+/*for (let i = 0; i < 3; i = i + 1) {
   console.log (i);
-}
+} */
 /* i++ or ++i */
 
-
+for (let i = 1; i <= 20; i++) {
+  console.log(i);
+  if (i % 3 === 0) {
+    console.log('Frontend');
+  }
+  else if (i % 5 === 0) {
+    console.log('Simplified');
+  }
+  else if (i % 3 === 0 && i % 5 === 0) {
+    console.log('FrontendSimplified');
+  }
+} 
