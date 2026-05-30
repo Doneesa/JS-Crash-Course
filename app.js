@@ -170,8 +170,8 @@ for (let i = 0; i < stri.length; i++) {
 
 // Call the function
 //**welcomePersonToFES('Doneesa', 'Hughes');
-*welcomePersonToFES('John', 'Doe');
-welcomePersonToFES('Mitri');
+//**welcomePersonToFES('John', 'Doe');
+//**welcomePersonToFES('Mitri');
 //There's two paths to function
 //One path to set the function
 //The second path to call it
