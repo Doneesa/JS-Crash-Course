@@ -1,13 +1,14 @@
-/*
+/**
+ * 
 EXAMPLE 1
-*/
-/*
-* Converting Temperatures
+/** 
+*  Converting Temperatures
 *
-* Celsius to Fahrenheit
+*  Celsius to Fahrenheit
 *
 *   F =  C X 1.8 + 32
- */
+*/
+
 let celsius = 10;
 let fahrenheit = celsius * 1.8 + 32; 
 
@@ -120,17 +121,60 @@ while (count <= 100) {
 /*for (let i = 0; i < 3; i = i + 1) {
   console.log (i);
 } */
-/* i++ or ++i */
-
+/**
+ *  i++ or ++i 
+ * */
 for (let i = 1; i <= 20; i++) {
   console.log(i);
-  if (i % 3 === 0) {
-    console.log('Frontend');
+}
+for (let i = 1; i <= 20; i++) { 
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log(`${i} ->FrontendSimplified`);
   }
   else if (i % 5 === 0) {
-    console.log('Simplified');
+    console.log(`${i} -> Simplified`);
   }
-  else if (i % 3 === 0 && i % 5 === 0) {
-    console.log('FrontendSimplified');
+  else if (i % 3 === 0) {
+    console.log(`${i} -> Frontend`);
+  }
+  else {
+    console.log(`${i} -> ${i}`)
   }
 } 
+
+let stri = "Frontend Simplified";
+for (let i = 0; i < stri.length; i++) {
+  console.log(stri[i]);
+}
+/**
+ * 
+ * EXAMPLE 8
+ * 
+ */ 
+// DRY = Domn't Repeat Yourself
+//console.log('Welcome to FES, David');
+//console.log('Welcome to FES, Zen');
+//console.log('Welcome to FES, Mitri')
+//
+//function welcomePersonToFES() {
+// console.log('Welcome to FES, David')
+//} 
+
+// You want the name to be dynamic!
+// We need to accept something called a parameter!
+// name is the parameter in this example
+// Function Definition
+//**function welcomePersonToFES(firstName, lastName) {
+  //**   console.log(`Welcome to Frontend Simplified, ${firstName} ${lastName}`)
+//} 
+
+// Call the function
+//**welcomePersonToFES('Doneesa', 'Hughes');
+*welcomePersonToFES('John', 'Doe');
+welcomePersonToFES('Mitri');
+//There's two paths to function
+//One path to set the function
+//The second path to call it
+//Inside the function we can set parameters 
+//and we can set as many parameters as we want
+//we can accept (firstName, lastName)
