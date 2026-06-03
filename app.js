@@ -178,3 +178,57 @@ for (let i = 0; i < stri.length; i++) {
 //Inside the function we can set parameters 
 //and we can set as many parameters as we want
 //we can accept (firstName, lastName)
+function fn () {
+  console.log('my function')
+}
+
+fn()
+//* 
+// LESSON 5 - ARRAYS
+//{
+
+/* ATTEMPT ALONE ******/
+let grades = ['A+', 'A', 'FAIL']
+let grades2 = ['FAIL', 'FAIL', 'B']
+let grades3 = ['FAIL']
+let newGrades = grades.filter((element) => {
+  if (element === 'FAIL') {
+    return false;
+  }
+  else {
+    return true;
+  }
+})
+
+console.log(newGrades);
+
+let newGrades2 = grades2.filter((element) => {
+  if (element === 'FAIL') {
+    return false;
+  }
+  else {
+    return true;
+  }
+})
+
+console.log(newGrades2);
+/* ATTEMPT WITH PEER ******
+let newGrades3 = grades3.filter(element => {
+  console.log(element);
+  if (element !== 'FAIL') {
+    return true;
+  }
+})
+
+console.log(newGrades3);
+*/
+/*
+let grades3 = ['FAIL']*/
+
+/*
+let newGrades3 = grades3.filter(element => {
+  return element !== 'FAIL'
+})
+*/
+let newGrades3 = grades3.filter(element => element !== 'FAIL')
+console.log(newGrades3);
