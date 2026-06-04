@@ -191,6 +191,7 @@ fn()
 let grades = ['A+', 'A', 'FAIL']
 let grades2 = ['FAIL', 'FAIL', 'B']
 let grades3 = ['FAIL']
+/*** * * * * * * *
 let newGrades = grades.filter((element) => {
   if (element === 'FAIL') {
     return false;
@@ -211,7 +212,7 @@ let newGrades2 = grades2.filter((element) => {
   }
 })
 
-console.log(newGrades2);
+console.log(newGrades2);* * * * * * * ***/
 /* ATTEMPT WITH PEER ******
 let newGrades3 = grades3.filter(element => {
   console.log(element);
@@ -228,7 +229,19 @@ let grades3 = ['FAIL']*/
 /*
 let newGrades3 = grades3.filter(element => {
   return element !== 'FAIL'
-})
-*/
+})*/
+/*** * ** BEST PRACTICE * * * * * *
 let newGrades3 = grades3.filter(element => element !== 'FAIL')
 console.log(newGrades3);
+* * * * * * * ***/
+/*** * * * * OTHER WAY TO SOLVE w/o ARRAY FILTER* * * * *** */ 
+let goodGrades = []
+for (let i=0; i < grades.length; i++) {
+  if (grades[i] !== 'FAIL') {
+    goodGrades.push(grades[i])
+  }
+}
+console.log(goodGrades);
+
+let arr = [1, 4, 9, 16];
+arr.map()
