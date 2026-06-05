@@ -242,6 +242,38 @@ for (let i=0; i < grades.length; i++) {
   }
 }
 console.log(goodGrades);
+/* *****.MAP *****Function ARRAY ATTEMPT ALONE long******/
+//let arr = [1, 4, 9, 16];
+//let newArray =arr.map((elem) => {
+//  console.log(elem);
+//  return '10';
+//})
+//
+//console.log(newArray);
 
+/* *****.MAP *****Function ARRAY ATTEMPT ALONE short******/
+//******* convert dollars to cents ******* */
 let arr = [1, 4, 9, 16];
-arr.map()
+let newArray =arr.map(elem => {return '10'});
+
+console.log(newArray);
+//* *******.map*******attempt alone practice 2 long version***//
+//let arr2 = [1, 5, 10, 3];
+//let newArr2 = arr2.map(elem => {
+//  console.log(elem);
+//  return elem * 100
+//});
+//console.log(newArr2);
+
+//*** alone practice 2 ***/
+let dollars = [0, 10, 20];
+let cents = dollars.map = ((element) => {
+  return element * 100});
+  console.log(cents);
+
+
+/* *******.map*******attempt alone practice 2 short version*** */
+let arr2 = [1, 5, 10, 3];
+let newArr2 = arr2.map(elem => {return elem * 100});
+console.log(newArr2);
+
