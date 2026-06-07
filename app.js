@@ -267,13 +267,21 @@ console.log(newArray);
 
 //*** alone practice 2 ***/
 let dollars = [0, 10, 20];
-let cents = dollars.map = ((element) => {
+let cents = dollars.map((element) => {
   return element * 100});
   console.log(cents);
 
 
 /* *******.map*******attempt alone practice 2 short version*** */
 let arr2 = [1, 5, 10, 3];
-let newArr2 = arr2.map(elem => {return elem * 100});
-console.log(newArr2);
+let newArr2 = arr2.map(elem => {
+  return elem * 100});
+  console.log(newArr2);
 
+/* *******non-filter*******attempt practice 2 short version*** */
+let dollars2 = [1, 5, 10, 3];
+let cents2 = [];
+for (let i=0; i < dollars2.length; i++) {
+    cents2.push(dollars2[i] * 100)
+  }
+console.log(cents2);
