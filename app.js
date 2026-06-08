@@ -285,3 +285,24 @@ for (let i=0; i < dollars2.length; i++) {
     cents2.push(dollars2[i] * 100)
   }
 console.log(cents2);
+//* *******JS OBJECTS 7 ******* */ curly brackets { }*/
+let userFirstName = 'Doneesa'
+let userLastName = "Hughes"
+let userDiscordId = 'Doneesa#1234'
+let userSubscriptionStatus = "VIP"
+
+let user = {
+  username: 'Doneesa',
+  email: 'doneeesachughes@gmail.com',
+  subscriptionStatus: 'VIP',
+  discordId: 'Doneesa#1234',
+  lessonsCompleted: [0, 1]
+}
+
+console.log(user.username[0]);
+
+console.log(user.subscriptionStatus);
+
+console.log(user.lessonsCompleted.map((elem) => elem * 2));
+
+
