@@ -291,18 +291,34 @@ let userLastName = "Hughes"
 let userDiscordId = 'Doneesa#1234'
 let userSubscriptionStatus = "VIP"
 
-let user = {
-  username: 'Doneesa',
-  email: 'doneeesachughes@gmail.com',
-  subscriptionStatus: 'VIP',
-  discordId: 'Doneesa#1234',
-  lessonsCompleted: [0, 1]
+let users = [
+  {
+    username: 'Doneesa',
+    email: 'doneesachughes@gmail.com',
+    password: 'test123',
+    subscriptionStatus: 'VIP',
+    discordId: 'Doneesa#1234',
+    lessonsCompleted: [0, 1],
+},
+{
+  username: "Mitra",
+  email: "mitri@frontendsimplified.com",
+  password: 'mitri123',
+  subscriptionStatus: "VIP",
+  discordId: "Mitri#0001",
+  lessonsCompleted: [0, 1, 2, 3]
+}
+];
+/*
+console.log(users[0].username);
+
+console.log(users[0].subscriptionStatus);
+
+console.log(users[1].lessonsCompleted.map((elem) => elem * 2));
+*/
+function login (email, password) {
+  console.log(email, password);
 }
 
-console.log(user.username[0]);
-
-console.log(user.subscriptionStatus);
-
-console.log(user.lessonsCompleted.map((elem) => elem * 2));
-
-
+login('doneesachughes@gmail.com', 'test123')
+console.log('Hello, Donnie!');
