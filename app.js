@@ -301,7 +301,7 @@ let users = [
     lessonsCompleted: [0, 1],
 },
 {
-  username: "Mitra",
+  username: "Mitri",
   email: "mitri@frontendsimplified.com",
   password: 'mitri123',
   subscriptionStatus: "VIP",
@@ -320,5 +320,16 @@ function login (email, password) {
   console.log(email, password);
 }
 
-login('doneesachughes@gmail.com', 'test123')
-console.log('Hello, Donnie!');
+//*login('doneesachughes@gmail.com', 'test123'); *//
+function login(email, password) {
+  for (let i = 0; i < users.length; ++i) {
+    if (users[i].paassword === password) {
+      console.log("log the user in - the details are correct")
+    }
+    else {
+      console.log('password is incorrect - try again')
+    }
+    return;
+  }
+}
+console.log('thisdoesnotexist@frontendsimplified.com','wrong password')
